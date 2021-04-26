@@ -1,0 +1,24 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+
+    a {
+        color: #dc3545;
+    }
+}
+
+.section-form-login {
+    background-color: #FFF;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+
+    a {
+        color: #dc3545;
+        text-decoration: none;
+
+        &:hover {
+            color: #a10c1b;
+            font-weight: 700;
+        }
+    }
+}

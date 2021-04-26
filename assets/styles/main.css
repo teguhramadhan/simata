@@ -1,0 +1,25 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+body a {
+  color: #dc3545;
+}
+
+.section-form-login {
+  background-color: #FFF;
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.section-form-login a {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.section-form-login a:hover {
+  color: #a10c1b;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */
