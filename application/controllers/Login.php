@@ -11,7 +11,7 @@ class Login extends CI_Controller
 
 		if($this->form_validation->run() == false ) {
 
-			$data['title'] = 'Login';
+			$data['title'] = 'Login Account';
 			$this->load->view('auth/login', $data);
 
 		} else {

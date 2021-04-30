@@ -1,8 +1,5 @@
 <div class="container-fluid">
   <section class="section-dashboard">
-    <div class="dashboard-header mt-3 mb-3">
-      <img src="<?= base_url('assets/images/illustration_dashboard.png') ?>" class="img-fluid mx-auto d-block" width="60%">
-    </div>
     <div class="dashboard-content">
       <div class="alert alert-success" role="alert">
         <h4>Selamat Datang di Sistem Informasi FTM</h4>

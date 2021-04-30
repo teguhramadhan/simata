@@ -8,7 +8,8 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title><?= $title ?></title>
+  <link rel="icon" href="<?= base_url('assets/') ?>images/logo.png">
+  <title>SIMATA | <?= $title ?></title>
 
   <!-- Bootstrap core CSS -->
   <link href="<?= base_url('assets/') ?>libraries/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -50,7 +51,7 @@
                 <p>
                   belum mempunyai akun?
                   <br>
-                  <a href="#">Hubungi admin</a>
+                  <a href="https://t.me/teguhramadhan" target="_blank">Hubungi admin</a>
                 </p>
               </div>
             </form>

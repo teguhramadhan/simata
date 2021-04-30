@@ -38,10 +38,18 @@
             <div class="form-group">
               <div class="row">
                 <div class="col-lg-8">
-                  <label for="gpon_ip">GPON IP</label>
-                  <input type="text" class="form-control" id="gpon_ip" name="gpon_ip">
-                  <small class="form-text text-muted">(*)contoh: EA 1/2/3/4 or OA 1/2/3/4</small>
-                  <?= form_error('gpon_ip', '<small class="text-danger">', '</small>'); ?>
+                  <div class="row">
+                    <div class="col">
+                      <label for="gpon_ip">GPON IP</label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="gpon_ip" name="gpon_ip" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                          <a class="mx-3 my-auto">
+                            <i class="fas fa-info-circle"></i>
+                          </a>
+                      </div>
+                      <?= form_error('gpon_ip', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                  </div>
                 </div>
                 <div class="col-lg-4">
                   <label for="odc">ODC</label>
@@ -82,5 +90,5 @@
 </div>
 <!-- /#page-content-wrapper -->
 
-  </div>
-  <!-- /#wrapper -->
+</div>
+<!-- /#wrapper -->

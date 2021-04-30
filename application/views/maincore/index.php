@@ -10,8 +10,8 @@
                   Add new Maincore
                 </a>
               </form>
-              <?= $this->session->flashdata('message'); ?>
             </div>
+            <?= $this->session->flashdata('message'); ?>
             <div class="table-responsive">
                 <table class="table table-hover table-bordered text-center">
                     <thead class="bg-danger text-white">
@@ -32,7 +32,7 @@
                             <td><?= $m['sto'] ?></td>
                             <td><?= $m['gpon_slot'] ?></td>
                             <td>
-                                <a href="#" class="btn btn-primary">
+                                <a href="<?= base_url('maincore/details') ?>" class="btn btn-primary">
                                   <i class="fas fa-expand-alt"></i>
                                 </a>
                             </td>
