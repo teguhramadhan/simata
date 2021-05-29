@@ -15,42 +15,44 @@
           <h5 class="card-title badge bg-danger text-white">Detail Maincore</h5>
           <table class="table table-responsive">
             <tbody>
+            <?php foreach ($detail_maincore as $m) : ?>
               <tr>
                 <td>Tanggal</td>
-                <th>30 April 2021</th>
+                <th><?= $m['tanggal'] ?></th>
               </tr>
               <tr>
                 <td>STO</td>
-                <th>RJW</th>
+                <th><?= $m['sto'] ?></th>
               </tr>
               <tr>
                 <td>GPON IP</td>
-                <th>127.0.0.1</th>
+                <th><?= $m['gpon_ip'] ?></th>
               </tr>
               <tr>
                 <td>GPON SLOT</td>
-                <th>GPON 1/1/1</th>
+                <th><?= $m['gpon_slot'] ?></th>
               </tr>
               <tr>
                 <td>SLOT EA</td>
-                <th>EA 1/1/1/1</th>
+                <th><?= $m['eakses'] ?></th>
               </tr>
               <tr>
                 <td>SLOT OA</td>
-                <th>OA 1/1/1/1</th>
+                <th><?= $m['oakses'] ?></th>
               </tr>
               <tr>
                 <td>DATEK ODC</td>
-                <th>FAA</th>
+                <th><?= $m['odc'] ?></th>
               </tr>
               <tr>
                 <td>Teknisi</td>
-                <th>Teguh Ramadhan Nur Islamy</th>
+                <th><?= $m['teknisi'] ?></th>
               </tr>
               <tr>
                 <td>Keterangan</td>
-                <th>Jumper baru</th>
+                <th><?= $m['keterangan'] ?></th>
               </tr>
+            <?php endforeach; ?>
             </tbody>
           </table>
           <a href="#" class="btn btn-success">Edit Data</a>

@@ -3,12 +3,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Maincore extends CI_Controller
 {
+
+  public function __construct()
+  {
+    parent::__construct();
+  }
+
   public function index()
   {
     $data['title'] = 'Maincore';
 
     $data['users'] = $this->db->get_where('users', ['email' => $this->session->userdata('email')])->row_array();
-    $data['maincore'] = $this->db->get('maincore_wbb')->result_array();
+    $data['maincore'] = $this->db->get('data_maincore_ftm')->result_array();
 
     $this->load->view('template/admin/header', $data);
     $this->load->view('template/admin/sidebar', $data);
@@ -22,7 +28,7 @@ class Maincore extends CI_Controller
     $data['title'] = 'View Maincore';
 
     $data['users'] = $this->db->get_where('users', ['email' => $this->session->userdata('email')])->row_array();
-    $data['maincore'] = $this->db->get('maincore_wbb')->result_array();
+    $data['maincore'] = $this->db->get('data_maincore_ftm')->result_array();
 
     $this->load->view('template/admin/header', $data);
     $this->load->view('template/admin/sidebar', $data);
@@ -36,7 +42,8 @@ class Maincore extends CI_Controller
     $data['title'] = 'Add Maincore';
 
     $data['users'] = $this->db->get_where('users', ['email' => $this->session->userdata('email')])->row_array();
-    $data['maincore'] = $this->db->get('maincore_wbb')->result_array();
+    $data['maincore'] = $this->db->get('data_maincore_ftm')->result_array();
+    $data['ip'] = $this->db->get('data_ip_wbb')->result_array();
 
     $this->form_validation->set_rules('sto', 'STO', 'required|trim', [
       'required' => 'STO harus di isi!'
@@ -76,11 +83,12 @@ class Maincore extends CI_Controller
     }
   }
 
-  public function details()
+  public function details($id)
   {
     $data['title'] = 'Details Maincore';
 
     $data['users'] = $this->db->get_where('users', ['email' => $this->session->userdata('email')])->row_array();
+    $data['detail_maincore'] = $this->db->get_where('maincore_wbb', ['id' => $id])->row_array();
     $data['maincore'] = $this->db->get('maincore_wbb')->result_array();
 
     $this->load->view('template/admin/header', $data);

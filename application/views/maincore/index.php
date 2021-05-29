@@ -14,12 +14,15 @@
             <?= $this->session->flashdata('message'); ?>
             <div class="table-responsive">
                 <table class="table table-hover table-bordered text-center">
-                    <thead class="bg-danger text-white">
+                    <thead>
                         <tr>
                             <th scope="col">No</th>
                             <th scope="col">Tanggal</th>
                             <th scope="col">STO</th>
-                            <th scope="col">GPON</th>
+                            <th scope="col">Hostname</th>
+                            <th scope="col">GPON SLOT</th>
+                            <th scope="col">E-Akses</th>
+                            <th scope="col">O-Akses</th>
                             <th scope="col">Action</th>
                         </tr>
                     </thead>
@@ -30,9 +33,12 @@
                             <td><?= $i; ?></td>
                             <td><?= $m['tanggal'] ?></td>
                             <td><?= $m['sto'] ?></td>
+                            <td><?= $m['gpon_ip'] ?></td>
                             <td><?= $m['gpon_slot'] ?></td>
+                            <td><?= $m['eakses'] ?></td>
+                            <td><?= $m['oakses'] ?></td>
                             <td>
-                                <a href="<?= base_url('maincore/details') ?>" class="btn btn-primary">
+                                <a href="<?= base_url('maincore/details/'.$m['id']) ?>" class="btn btn-primary">
                                   <i class="fas fa-expand-alt"></i>
                                 </a>
                             </td>

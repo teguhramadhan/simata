@@ -1,7 +1,7 @@
 <!-- Sidebar -->
 <div class="bg-danger border-right" id="sidebar-wrapper">
     <div class="sidebar-heading ">
-        <img src="<?= base_url('assets/') ?>images/logo_ta_white.png" class="img-fluid" alt="logo TA">
+        <img src="<?= base_url('assets/') ?>images/logo_monata_white.png" class="img-fluid" alt="logo TA">
       </div>
       <div class="list-group list-group-flush mt-4">
         <a href="<?= base_url('admin') ?>" class="list-group-item list-group-item-action bg-danger text-white py-3">

@@ -29,7 +29,7 @@
         <section class="section-form-login">
           <form action="<?= base_url('login') ?>" method="post">
             <div class="form-header text-center">
-                <img class="img-fluid pb-4" src="<?= base_url('assets/') ?>images/logo_ta.png" alt="Logo TA">
+                <img class="img-fluid pb-4" src="<?= base_url('assets/') ?>images/logo_monata.png" alt="Logo TA">
                 <?= $this->session->flashdata('message'); ?>
                 </div>
                 <hr>
@@ -49,9 +49,7 @@
                 </button>
               <div class="form-footer text-center pt-4">
                 <p>
-                  belum mempunyai akun?
-                  <br>
-                  <a href="https://t.me/teguhramadhan" target="_blank">Hubungi admin</a>
+                  <small>belum mempunyai akun? <a href="https://t.me/teguhramadhan" target="_blank">Hubungi admin</a></small>
                 </p>
               </div>
             </form>
